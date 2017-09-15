@@ -44,10 +44,10 @@ Adding authorized keys on remote server can be done manually by creating `~/.ssh
 ## Create new account
 You should always use another account for specific purpose and use `root` as minimal as possible. This is a common security guidance for all servers.
 
-Create a user named `deploy` for deployment tasks
+Create a user named `deploy` for deployment tasks.
 ```bash
-# adduser deploy
-# usermod -aG sudo deploy   //note: add 'deploy' user to sudo group
+$ adduser deploy
+$ usermod -aG sudo deploy   //note: add 'deploy' user to sudo group
 ```
 
 ## Ease SSH access with the config
