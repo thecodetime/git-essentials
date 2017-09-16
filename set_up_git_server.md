@@ -50,3 +50,54 @@ The `WORK_TREE` is a web server directory. There is a command `git checkout ... 
 $ cd
 $ mkdir -p server/production/codetime
 ```
+
+6. Make sure the firewall is on and allows SSH and HTTP.
+```bash
+$ sudo ufw app list
+$ sudo ufw allow 'OpenSSH'
+$ sudo ufw allow 'Nginx HTTP'
+$ sudo ufw enable
+$ sudo ufw status
+```
+
+7. Setup Nginx and set root path to `WORK_TREE` directory.
+```bash
+# in case Nginx is not installed
+$ sudo apt-get update
+$ sudo apt-get install nginx
+
+$ sudo vi /etc/nginx/sites-enabled/default
+```
+
+__default__
+```
+# forward all non-www to www
+server {
+        listen 80;
+        server_name thecodetime.com;
+        return 301 http://www.thecodetime.com$request_uri;
+}
+server {
+        listen 80;
+        listen [::]:80;
+        server_name www.thecodetime.com;
+
+        root /home/deploy/server/production/codetime;
+        index index.html;
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
+```
+
+8. Restart Nginx and browse to [http://www.thecodetime.com](http://www.thecodetime.com).
+```bash
+# to start Nginx
+$ sudo nginx
+
+# to restart
+$ sudo nginx -s reload
+```
+
+
+
