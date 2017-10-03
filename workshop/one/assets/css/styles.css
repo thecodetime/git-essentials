@@ -1,22 +1,4 @@
-body {
-  background-image: url('../images/background.jpg');
-}
 .card {
   padding: 0.5em 1em;
   margin-bottom: 1em;
-}
-
-.navy-theme {
-  background-color: #02373e;
-  color: white;
-}
-
-.pink-theme {
-  background-color: #ff8b8b;
-  color: #560f0f;
-}
-
-.green-theme {
-  background-color: #4bab83;
-  color: white;
 }
