@@ -1,4 +1,20 @@
+body {
+	background: url(../images/background.jpg) center center;
+	padding: 30px 0;
+}
 .card {
   padding: 0.5em 1em;
   margin-bottom: 1em;
+}
+.card img {
+	margin-bottom: 10px;
+}
+.card-1 {
+	background-color: #faceaa;
+}
+.card-2 {
+	background-color: #aaface;
+}
+.card-3 {
+	background-color: #faaace;
 }
