@@ -1,0 +1,8 @@
+.card {
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+}
+
+.col-md-4 .col2 {
+	background-color:#DDD;
+}
