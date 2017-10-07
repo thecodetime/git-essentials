@@ -1,7 +1,16 @@
+body {
+  background: url(../images/background.jpg)
+}
+
 .card {
   padding: 0.5em 1em;
   margin-bottom: 1em;
 }
+
 .bg-grey {
  background-color: grey;
+}
+
+.bg-pink {
+  background-color: pink;
 }
