@@ -50,3 +50,31 @@ $ git push origin --tags            # push all tags to remote server
 
 $ git checkout -b version-1.5 v1.5  # check out tags
 ```
+
+#### $ git merge
+```
+$ git merge feature-a           # merge current branch with feature-a branch
+$ git merge feature-a --no-ff   # when fast-forward merge cannot be done,
+provide non fast-foward option to resolve the conflicts and merge manually
+
+```
+
+#### $ git rebase
+```
+$ git rebase HEAD~2       # change current branch to base with the second commit
+before HEAD, enter with specific hash number also works.
+$ git rebase b503e59
+
+$ git rebase HEAD~2 -i    # -i means interactive mode where we can squash
+(combine), drop, and etc.
+
+# List of interactive mode commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit
+```
+
