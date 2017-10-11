@@ -4,9 +4,8 @@
 [Git Essentials and Workflow](https://goo.gl/FL1UvN)
 
 ### Videos
-#### Git Flow
-![Image of Git Flow](https://github.com/thecodetime/git-essentials/raw/master/images/git_flow.jpg)
-1. [Best Practice for Branch, Commit and Pull Request](https://www.youtube.com/watch?v=App5qP55lyo)
+#### [GIT:Flow - Best Practices for Better Git](https://www.youtube.com/playlist?list=PL86RvhJ7eZiVX0lhOUJ4BvpSpB2dvd2ch)
+[![Git Flow](https://github.com/thecodetime/git-essentials/raw/master/images/git_flow.jpg)](https://www.youtube.com/playlist?list=PL86RvhJ7eZiVX0lhOUJ4BvpSpB2dvd2ch)
 
 ### Set up Automated Git Production Server
 1. [Connect Local and Production machines with SSH](https://github.com/thecodetime/git-essentials/blob/master/set_up_ssh_pem_server.md)
